@@ -37,6 +37,7 @@ module.exports = {
     DatabaseName: process.env.DBNAME || 'stripe_int Dev DB',
     DatabaseURI: process.env.DB_URI || 'mongodb://localhost/apier-dev',
     JWTSecret: process.env.JWT_SECRET || '}J3oh3@w"d$@0m}y:j!X*m1GpI&!bHZg',
-    BcryptCost: process.env.BCRYPT_COST || 11
+    BcryptCost: process.env.BCRYPT_COST || 11,
+    SSK: process.env.SSK
   }
 };
