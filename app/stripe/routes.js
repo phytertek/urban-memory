@@ -1,4 +1,8 @@
-const { getStripeAuth, getStripePeekAuth } = require('./controllers');
+const {
+  getStripeAuth,
+  getStripePeekAuth,
+  postStripeNewAccount
+} = require('./controllers');
 const { authorizeRoute } = require('../services').Auth;
 
 module.exports = {
