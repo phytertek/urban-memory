@@ -8,7 +8,7 @@ module.exports = {
     // },
     get: {
       '/auth': getStripeAuth,
-      '/peekAuth': [authorizeRoute, getStripePeekAuth]
+      '/peekAuth': getStripePeekAuth // [authorizeRoute, getStripePeekAuth]
     }
     // post: {},
     // patch: {},
