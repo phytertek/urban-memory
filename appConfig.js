@@ -1,6 +1,11 @@
 module.exports = {
   // App Components
   Components: {
+    Stripe: {
+      Schema: 'Add comments here',
+      Routes: 'Add comments here',
+      Services: 'Add comments here',
+    },
     Auth: {
       Schema: 'authentication user schema',
       Services: 'authenticatedRoute and decodeToken',
