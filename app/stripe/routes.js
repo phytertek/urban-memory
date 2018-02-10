@@ -15,3 +15,5 @@ module.exports = {
     // delete: {}
   }
 };
+
+// Test Strip Routes
