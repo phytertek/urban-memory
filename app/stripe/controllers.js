@@ -90,5 +90,18 @@ module.exports = {
     } catch (error) {
       sendUserError(error, res);
     }
+  },
+  postStripeNewAccount: async (req, res) => {
+    try {
+      const { email } = req.body;
+      const newAcct = await stripe.accounts.create({
+        type: 'standard',
+        country: 'US',
+        email
+      });
+      res.json(newAcct);
+    } catch (error) {
+      sendUserError(error, res);
+    }
   }
 };

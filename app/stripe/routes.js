@@ -9,8 +9,10 @@ module.exports = {
     get: {
       '/auth': getStripeAuth,
       '/peekAuth': getStripePeekAuth // [authorizeRoute, getStripePeekAuth]
+    },
+    post: {
+      '/new-account': postStripeNewAccount
     }
-    // post: {},
     // patch: {},
     // delete: {}
   }
