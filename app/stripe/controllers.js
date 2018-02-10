@@ -85,8 +85,8 @@ module.exports = {
   },
   getStripePeekAuth: async (req, res) => {
     try {
-      console.log(stripe);
-      res.json(stripe);
+      // console.log(stripe);
+      res.json(auth.info);
     } catch (error) {
       sendUserError(error, res);
     }
